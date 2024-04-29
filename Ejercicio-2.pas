@@ -12,6 +12,6 @@ for i:= 1 to c do
         readln (n);
         suma := n + suma;
     end;
-  promedio := suma / 10;
+  promedio := suma / c;
   writeln('La suma de los valores da ', suma:0:2, ' y el promedio ', promedio:0:2);
 end.
