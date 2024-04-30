@@ -3,10 +3,6 @@ var
 c, peso, p98y102, menos98, mas102: integer;
 begin
 writeln ('0 STOP 2');
-p98y102 := 0;
-menos98 := 0;
-mas102 := 0;
-c := 0;
 repeat
     writeln ('Ingrese el peso en gramos de la pieza: ');
     readln (peso);
@@ -22,6 +18,6 @@ repeat
 until peso = 0;
     writeln ('Cantidad de piezas con un peso entre 98 y 102 gr: ', p98y102);
     writeln ('Cantidad de piezas con un peso mayor a 102 gr: ', mas102);
-    writeln ('Cantidad de piezas con un peso menor a 98 gr: ', menos98);
-    writeln ('Cantidad de piezas en total: ', c);
+    writeln ('Cantidad de piezas con un peso menor a 98 gr: ', menos98 - 1);
+    writeln ('Cantidad de piezas en total: ', c - 1);
 end.
