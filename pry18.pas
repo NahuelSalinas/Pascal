@@ -19,6 +19,6 @@ begin
     writeln ('Nivel medio: ', porcentaje:0:0, '%')
   else if (porcentaje >= 50) and (porcentaje < 75) then
     writeln ('Nivel regular: ', porcentaje:0:0, '%')
-  else if (porcentaje < 50) then
+  else
     writeln ('Fuera de nivel: ', porcentaje:0:0, '%')
 end.
