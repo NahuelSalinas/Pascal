@@ -1,4 +1,4 @@
-program ejercicio4;
+program ejercicio8;
 var
 c, peso, p98y102, menos98, mas102: integer;
 begin
