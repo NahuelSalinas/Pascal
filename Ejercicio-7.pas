@@ -1,4 +1,4 @@
-program ejercicio3;
+program ejercicio7;
 var
 i, n: integer;
 suma, promedio: double;
