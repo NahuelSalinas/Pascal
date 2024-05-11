@@ -1,17 +1,14 @@
 program ejercicio5;
-
 var
 i: integer;
 n, suma, promedio: double;
-
 begin
-suma := 0;
-for i:= 0 to 9 do 
+for i:= 1 to 10 do 
     begin 
-        write ('Ingrese un numero: ');
+        write ('Ingrese valor N°', i, ':');
         readln (n);
         suma := n + suma;
     end;
-  promedio := suma / 10;
+  promedio := suma / i;
   writeln('La suma de los valores da ', suma:0:2, ' y el promedio ', promedio:0:2);
 end.
