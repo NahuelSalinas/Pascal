@@ -1,26 +1,12 @@
 program pry16;
-
-var
-    n: integer;
-    
+var n: integer;
 begin
   writeln ('Ingrese un numero: ');
   read (n);
-  
   if n > 0 then
-    begin
-      writeln ('Valor positivo.');
-    end
+    writeln ('Valor positivo.')
+    else if n < 0 then
+        writeln ('Valor negativo.')
     else 
-      begin
-        if n < 0 then
-        begin
-          writeln ('Valor negativo.');
-        end
-        else 
-          begin
-            writeln ('Valor nulo.');
-        end;
-      end;
-
+        writeln ('Valor nulo.');
 end.
