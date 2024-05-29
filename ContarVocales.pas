@@ -45,3 +45,24 @@ begin
   end;
   writeln('El número de vocales en la palabra es: ', c);
 end.
+
+
+program ContarVocales;
+var
+  txt : string;
+  i, c : integer;
+
+begin
+  c := 0;
+  writeln ('Ingrese la palabra: ');
+  readln(txt);
+  txt := LowerCase(txt);
+  
+  for i := 1 to Length(txt) do 
+  begin
+    if (txt[i] = 'a') or (txt[i] = 'e') or (txt[i] = 'i') or (txt[i] = 'o') or (txt[i] = 'u') or
+       (txt[i] = 'á') or (txt[i] = 'é') or (txt[i] = 'í') or (txt[i] = 'ó') or (txt[i] = 'ú') then
+      c := c + 1;
+  end;
+  writeln('El número de vocales en la palabra es: ', c);
+end.
