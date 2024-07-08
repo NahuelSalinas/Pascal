@@ -1,0 +1,17 @@
+program funcion;
+var
+N1, N2 : integer;
+
+function sumar2N(a, b: integer): integer;
+    begin
+        sumar2N := a + b;
+    end;
+
+Begin
+  write('Ingrese el primer valor: ');
+  readln(N1);
+  write('Ingrese el segundo valor: ');
+  readln(N2);
+
+  write('La suma de los dos numeros da: ', sumar2N(N1, N2));
+end.
