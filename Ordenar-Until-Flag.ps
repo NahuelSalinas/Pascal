@@ -1,0 +1,35 @@
+program ordenar;
+var
+miArray: array[1..5] of integer;
+i: integer;
+isSorted: boolean;
+
+begin
+    writeln ('Prueba combinada');
+    
+    miArray[1] := 5;
+    miArray[2] := 4;
+    miArray[3] := 12;
+    miArray[4] := 2;
+    miArray[5] := 1;
+    
+    repeat
+    isSorted := true;
+    for i := 1 to 4 do
+    begin
+        if miArray[i] > miArray[i + 1] then 
+        begin
+            miArray[i] := miArray[i] + miArray[i + 1];
+            miArray[i + 1] := miArray[i] - miArray[i + 1];
+            miArray[i] := miArray[i] - miArray[i + 1];
+            
+            isSorted := false;
+        end;
+    end;
+    
+    until isSorted;
+    
+    for i := 1 to 5 do
+        writeln(miArray[i]);
+    
+end.
